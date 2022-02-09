@@ -11,3 +11,48 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+
+html body {
+  font-size: 16px;
+}
+
+img {
+  max-width: 100%;
+}
+
+
+/*  */
+.grid {
+  padding-left: 0;
+}
+.grid li {
+  margin-right: 0;
+}
+.blogItem {
+  box-shadow: 0 0 5px #aaa; margin-bottom: 1.25rem;
+}
+.blogItem h3 {
+  font-size: 1rem; text-transform: capitalize;
+}
+.blog-content {
+  padding: .75rem;
+}
+.blog-content p{
+  margin-bottom: .25rem;
+}
+.blog-title {
+  min-height: 36px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+.blog-title a {
+  color: #000; 
+}
+.blog-title a:hover {
+  color: green; 
+}
+

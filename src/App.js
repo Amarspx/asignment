@@ -1,23 +1,54 @@
-import logo from './logo.svg';
-import './App.css';
+
+import Header from './component/Layout/Header';
+import Footer from './component/Layout/Footer';
+import React, {Suspense} from 'react';
+import { Route, Switch } from 'react-router-dom';
+import LoadingSpinner from './component/UI/LoadingSpinner';
+
+const Home = React.lazy(() => import('./component/pages/Home'));
+const Blog = React.lazy(() => import('./component/pages/Blog'));
+const BlogDetail = React.lazy(() => import('./component/pages/BlogDetail'));
+const Contact = React.lazy(() => import('./component/pages/Contact'));
+const Notfound = React.lazy(() => import('./component/pages/Notfound'));
+
 
 function App() {
+	
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+	
+			<Header />
+			<Suspense
+				fallback={
+					<div className='centered'>
+						<LoadingSpinner />
+					</div>
+				}
+			>
+			<Switch>			
+				<Route path="/blog">		
+					<Blog />
+				</Route>
+				<Route path="/blogDetail/:bId">
+					<BlogDetail />
+				</Route>
+				<Route path="/contact">
+					<Contact />
+				</Route>
+				<Route path="/" exact>
+					<Home />
+				</Route>
+
+				<Route path="*">
+					<Notfound />
+				</Route>
+			</Switch>
+			</Suspense>
+				
+			<Footer />
+
+	  
+	  
     </div>
   );
 }

@@ -1,0 +1,27 @@
+{
+    "welcome_to_react": "Welcome to Eng language",
+    "en": "En",
+    "th": "Th",
+    "home": "Home",
+    "blog": "Blog",
+    "contact": "Contact",
+    "login": "Login",
+    "logout": "Logout",
+    "user_name": "User Name",
+    "password": "Password",
+    "close": "Close",
+    "save": "Save",
+    "blogs": "Blogs",
+    "latest_blog": "Latest Blog",
+    "footer": "Footer",
+    "sort_by": "Sort by",
+    "user": "User",
+    "comment": "Comment",
+    "related_blog":"Related Blog",
+    "contact_us": "Contact us Page",
+    "name": "Name",
+    "email": "Email",
+    "message": "Message",
+    "submit": "Submit"
+    
+}

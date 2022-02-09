@@ -1,0 +1,55 @@
+.login {
+    width: 90%;
+    max-width: 40rem;
+    margin: 2rem auto;
+    padding: 2rem;
+  }
+  
+  .formGroup {
+    margin-bottom: 1rem;
+  }
+  
+  .formGroup label,
+  .formGroup input {
+    display: block;
+  }
+  
+  .formGroup label {
+    font-weight: bold;
+    flex: 1;
+    color: #464646;
+    margin-bottom: 0.5rem;
+  }
+  
+  .formGroup input {
+    flex: 3;
+    font: inherit;
+    padding: 0.35rem 0.35rem;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+  }
+  
+  .formGroup input:focus {
+    outline: none;
+    border-color: #4f005f;
+    background: #f6dbfc;
+  }
+  
+  .formGroup.invalid input {
+    border-color: red;
+    background: #fbdada;
+  }
+
+  .invalid {
+    color:red;
+  }
+  
+ 
+  
+  @media (min-width: 768px) {
+    .formGroup {
+      align-items: center;
+      flex-direction: row;
+    }
+  
+  }

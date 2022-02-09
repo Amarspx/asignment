@@ -1,0 +1,13 @@
+
+.grid {
+    display: flex; flex-wrap: wrap;
+}
+.grid > li {
+    padding: 7.5px;
+}
+.grid-5 li {
+    width: 20%;
+}
+.grid {
+    display: flex;
+}
