@@ -4,7 +4,7 @@ import Nav from './Nav';
 
 import React, { useEffect } from 'react';
 import i18n from "i18next";
-import { useTranslation, initReactI18next } from "react-i18next";
+import { useTranslation } from "react-i18next";
 
 
 const Footer = () => {

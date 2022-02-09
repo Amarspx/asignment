@@ -10,7 +10,7 @@ import SkeletonBlogItem from '../skeleton/SkeletonBlogItem';
 
 
 import i18n from "i18next";
-import { useTranslation, initReactI18next } from "react-i18next";
+import { useTranslation } from "react-i18next";
 
 
 function Blog(props) {
@@ -95,7 +95,7 @@ function Blog(props) {
                             <div className="blogItem">
                                 <div className="blogImage">
                                     <Link to={"/BlogDetail/" + items.id}>
-                                        <img src={items.url} />
+                                        <img src={items.url} alt='img' />
                                     </Link>
                                 </div>
                                 <div className='blog-content'>

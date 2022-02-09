@@ -5,7 +5,7 @@ import { NavLink } from 'react-router-dom';
 import React, { useEffect } from 'react';
 // import ReactDOM from 'react-dom';
 import i18n from "i18next";
-import { useTranslation, initReactI18next } from "react-i18next";
+import { useTranslation } from "react-i18next";
 
 const Nav = () => {
     const { t } = useTranslation(); 

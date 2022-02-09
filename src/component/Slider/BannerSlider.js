@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 import Slider from "react-slick";
 import './slick-slider.css';
 
@@ -19,22 +19,22 @@ const BannerSlider = () => {
           <Slider {...settings}>
             <div>
                 <div>
-                  <img src={'https://via.placeholder.com/1800x450/0000FF/808080 ?Text=1'} />
+                  <img src={'https://via.placeholder.com/1800x450/0000FF/808080 ?Text=1'} alt='Banner' />
                 </div>
             </div>
             <div>
                 <div>
-                  <img src={'https://via.placeholder.com/1800x450/FF0000/ffffff ?Text=1'} />
+                  <img src={'https://via.placeholder.com/1800x450/FF0000/ffffff ?Text=1'} alt='Banner'  />
                 </div>
             </div>
             <div>
                 <div>
-                  <img src={'https://via.placeholder.com/1800x450/aaaaaa/000000 ?Text=1'} />
+                  <img src={'https://via.placeholder.com/1800x450/aaaaaa/000000 ?Text=1'}  alt='Banner' />
                 </div>
             </div>
             <div>
                 <div>
-                  <img src={'https://via.placeholder.com/1800x450/000000/ffffff ?Text=1'} />
+                  <img src={'https://via.placeholder.com/1800x450/000000/ffffff ?Text=1'} alt='Banner' />
                 </div>
             </div>          
           </Slider>

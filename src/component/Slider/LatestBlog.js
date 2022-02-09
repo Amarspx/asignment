@@ -1,8 +1,7 @@
 import {Link} from "react-router-dom";
 import React, { useState, useEffect } from "react";
 import Slider from "react-slick";
-import './slick-slider.css';
-import '../Slider/LatestBlog.css';
+import './slick-slider.css';    
 import SkeletonBlogLatest from "../skeleton/SkeletonBlogLatest";
 import { SkeletonTheme } from "react-loading-skeleton";
 
@@ -57,7 +56,7 @@ const LatestBlog = () => {
                         <div className='blogItem'>
                             <div className="blogImage">
                                 <Link to={"/BlogDetail/" + item.id}>
-                                    <img src={item.url} />
+                                    <img src={item.url} alt='img'/>
                                 </Link>
                             </div>
                             <div className='blog-content'>
@@ -70,7 +69,7 @@ const LatestBlog = () => {
                     </div>
                 )
             }	
-            </Slider>
+            </Slider> 
             </div>
 
         }

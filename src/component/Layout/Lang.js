@@ -1,5 +1,4 @@
 import React, { useEffect } from 'react';
-import ReactDOM from 'react-dom';
 import i18n from "i18next";
 import { useTranslation, initReactI18next } from "react-i18next";
 
@@ -54,8 +53,8 @@ const Lang = (props) => {
 
     return(
         <>  
-            <a className="lang"  onClick={ changeLang('en') }>{ t('en') }</a>
-            <a className="lang"  onClick={ changeLang('th') }>{ t('th') }</a>
+            <span className="lang pointer" onClick={ changeLang('en') }>{ t('en') }</span>
+            <span className="lang pointer" onClick={ changeLang('th') }>{ t('th') }</span>
       
         </>
         

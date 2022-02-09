@@ -8,7 +8,7 @@ import ReactPaginate from 'react-paginate';
 import SkeletonBlogHome from '../component/skeleton/SkeletonBlogHome';
 
 import i18n from "i18next";
-import { useTranslation, initReactI18next } from "react-i18next";
+import { useTranslation } from "react-i18next";
 
 function HomeBlog(props) {
     
@@ -20,7 +20,6 @@ function HomeBlog(props) {
     let limit = 10;
 
   
-    const blogUrl = '';
     useEffect(() => {
         const getComments = async () => {
           const res = await fetch(
@@ -85,7 +84,7 @@ function HomeBlog(props) {
                                     <div className="blogItem">
                                         <div className="blogImage">
                                             <Link to={"/BlogDetail/" + items.id}>
-                                                <img src={items.url} />
+                                                <img src={items.url} alt=''/>
                                             </Link>
                                         </div>
                                         <div className='blog-content'>
@@ -99,12 +98,10 @@ function HomeBlog(props) {
                             );
                     })
                     
-                }
-                      
+                }                      
                 
             </ul>       
-                
-                
+                                
             <ReactPaginate
                 previousLabel={"previous"}
                 nextLabel={"next"}

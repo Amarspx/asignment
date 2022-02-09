@@ -4,12 +4,9 @@ import React, {useState, useEffect} from "react";
 
 import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
-// import ErrorModal from '../UI/ErrorModal';
 
-
-import ReactDOM from 'react-dom';
 import i18n from "i18next";
-import { useTranslation, initReactI18next } from "react-i18next";
+import { useTranslation } from "react-i18next";
 
 const Auth = (props) => {
 
@@ -97,14 +94,14 @@ const Auth = (props) => {
         <>    
                    
             {!isLoggedIn && 
-                <a className="login" href="#" onClick={handleShow }>{ t('login') }</a>
+                <span className="login pointer" onClick={handleShow }>{ t('login') }</span>
             }
             {setIsUser &&    
                 <span>{localStorage.getItem('isUser')}</span>
             }
             {isLoggedIn &&            
-                <a className="logout" href='#' onClick={logoutHandler}>
-                { t('logout') }</a>
+                <span className="logout pointer" onClick={logoutHandler}>
+                { t('logout') }</span>
             }
 
             <Modal show={show} onHide={handleClose} centered>
@@ -117,9 +114,9 @@ const Auth = (props) => {
                         <div className={`${classes.formGroup} ${
                             userIsValid === false ? classes.invalid : ''
                         }`}>
-                            <label htmlFor="userName">{ t('user_name') }</label>
+                            <label htmlFor="userNames">{ t('user_name') }</label>
                             <input className="form-control" 
-                            id="userName" autoComplete="off" 
+                            id="userNames" autoComplete="off" 
                             type="text"
                             id="email"
                             value={userName}
@@ -155,9 +152,9 @@ const Auth = (props) => {
                         </div>
                     </form>
             
-            </Modal.Body>
+                </Modal.Body>
                 
-                </Modal>
+            </Modal>
 
             {/* {error && <ErrorModal title={error.title} 
             message={error.message} />}  */}

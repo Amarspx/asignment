@@ -1,7 +1,6 @@
 
 
 import React, { useEffect, useState } from "react";
-import {Link} from "react-router-dom";
 
 import ReactPaginate from 'react-paginate';
 import { SkeletonTheme } from "react-loading-skeleton";
@@ -19,8 +18,6 @@ function Comment(props) {
 
     let limit = 2;
 
-  
-    const blogUrl = '';
     useEffect(() => {
         const getComments = async () => {
           const res = await fetch(
