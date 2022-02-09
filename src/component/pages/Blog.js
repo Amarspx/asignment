@@ -55,7 +55,6 @@ function Blog(props) {
 
     /* Sorting  */
    
-
     /**/
     const { t } = useTranslation();
 	useEffect(() => {
