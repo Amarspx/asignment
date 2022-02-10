@@ -31,7 +31,7 @@ const Contact = (props) => {
 
     return(
         <div className="container">
-            <h1>{ t('name') }</h1>
+            <h1>{ t('contact_us') }</h1>
             <div className="row">
             <form className="col-md-6" onSubmit={handleSubmit(onSubmit)}>
                 <div className="form-group">

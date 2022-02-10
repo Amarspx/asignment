@@ -114,9 +114,9 @@ const Auth = (props) => {
                         <div className={`${classes.formGroup} ${
                             userIsValid === false ? classes.invalid : ''
                         }`}>
-                            <label htmlFor="userNames">{ t('user_name') }</label>
+                            <label htmlFor="email">{ t('user_name') }</label>
                             <input className="form-control" 
-                            id="userNames" autoComplete="off" 
+                            autoComplete="off" 
                             type="text"
                             id="email"
                             value={userName}
