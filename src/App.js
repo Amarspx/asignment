@@ -9,6 +9,7 @@ const Home = React.lazy(() => import('./component/pages/Home'));
 const Blog = React.lazy(() => import('./component/pages/Blog'));
 const BlogDetail = React.lazy(() => import('./component/pages/BlogDetail'));
 const Contact = React.lazy(() => import('./component/pages/Contact'));
+const Table = React.lazy(() => import('./component/pages/Table'));
 const Notfound = React.lazy(() => import('./component/pages/Notfound'));
 
 
@@ -34,6 +35,9 @@ function App() {
 				</Route>
 				<Route path="/contact">
 					<Contact />
+				</Route>
+				<Route path="/table">
+					<Table/>
 				</Route>
 				<Route path="/" exact>
 					<Home />

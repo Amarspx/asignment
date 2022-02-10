@@ -35,6 +35,7 @@ const Nav = () => {
                  { t('contact') }
                 </NavLink>
             </li>
+            
         </ul>
             
         </div>
